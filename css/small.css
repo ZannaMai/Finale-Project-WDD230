@@ -1,0 +1,86 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #FFE5D4;
+    padding: 1em;
+}
+
+html {
+    background-color: #68A691;
+    font-family: "Oswald", sans-serif;
+}
+h1,
+h2,
+h3,
+button {
+    font-family: 'IM Fell Double Pica', serif;
+}
+
+.logo1, .logo2 {
+    width: 40px;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+header, footer {
+    background-color: #BFD3C1;
+}
+
+.primary-logo {
+    width: 50%;
+}
+
+nav button {
+    margin: 0.2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul li a {
+    display: flex;
+    padding: 0.6rem 2vw;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li.home a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+#hamburgerBtn.open span:nth-child(2) {
+    display: flex;
+}
+
+.footer-logo {
+    width: 25%;
+}
