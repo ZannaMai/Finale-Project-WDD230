@@ -19,11 +19,10 @@ fetch(requestURL)
             let website = document.createElement('a');
             name.textContent = temples.name;
             address.textContent = temples.address;
-            phonenumber.textContent = temples.phonenumber;
+            telephone.textContent = temples.telephone;
             website.textContent = temples.website;
           
-            image.setAttribute('src', temples.imageurl);
-            image.setAttribute('alt', `Image of ${temples.name}'s Temple`);
+            image.setAttribute('alt', `Image of ${temples.name}`);
                    
             card.appendChild(image);
             card.appendChild(name);
@@ -34,12 +33,3 @@ fetch(requestURL)
             document.getElementById('cards').appendChild(card);
         
         }
-        function toogleView() {
-            document.getElementById('gridBtn').classList.toggle('active')
-            document.getElementById('cards').classList.toggle('active')
-        }
-        function toogleView() {
-            document.getElementById('listBtn').classList.toggle('active')
-            document.getElementById('cards').classList.toggle('active')
-        }
-        
