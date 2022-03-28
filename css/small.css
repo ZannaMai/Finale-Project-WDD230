@@ -28,6 +28,10 @@ header, footer {
     background-color: #BFD3C1;
 }
 
+header {
+    display: flex;
+}
+
 .primary-logo {
     width: 50%;
 }
@@ -79,8 +83,4 @@ nav ul li a:hover {
 
 #hamburgerBtn.open span:nth-child(2) {
     display: flex;
-}
-
-.footer-logo {
-    width: 100px;
 }
