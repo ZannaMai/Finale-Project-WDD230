@@ -53,6 +53,10 @@ nav ul.open {
     display: block;
 }
 
+.primary-logo.open {
+    display: none;
+}
+
 nav ul li a {
     display: flex;
     padding: 0.6rem 2vw;
@@ -60,14 +64,20 @@ nav ul li a {
     color: #333;
 }
 
-nav ul li.home a {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #fff;
-}
-
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.3);
+    color: wheat;
 }
+
+nav ul li .active {
+    background-color: transparent;
+    color: var(--text-on-primary-background);
+    font-size: large;
+}
+
+nav a:hover {
+    color: #9988e7;
+  }
 
 #hamburgerBtn span:nth-child(1) {
     display: block;
