@@ -33,7 +33,29 @@
 </header>
 
 <main>
-  <div class="home-grid">
+  <picture class="hero-image">
+    <source media="(max-width: 1167px)" srcset="images/medium_image.jpg">
+    <source media="(max-width: 1500px)" srcset="images/idahofalls.jpg">
+    <img src="images/idahofalls.jpg" alt="picture of the Idaho Falls Temple">
+  </picture>
+
+  <p class="welcome"> Welcome to Temple Inn & Suites! We are a hotel chain that manages specialized hotel accommodations near temple 
+    locations of The Church of Jesus Christ of Latter-day Saints.
+  </p>
+
+  <div class="call">
+    <a href="./reservation.html">
+    <button type="button" class="button1">Make a Reservation Today!</button>
+  </a>
+  </div>
+
+  <div class="contact-info">
+    <h2>Contact Us</h2>
+    <p>Telephone: (123)456-7891</p>
+    <p>Email: templeinn@contact.com</p>
+    <p>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+  </div>
+
     <div class="weather">
         <h2>
             Current Weather
@@ -48,12 +70,22 @@
                 <p><span id="current-temp"></span>&deg;C</p>
                 <figcaption></figcaption>
             </figure>
-            
-            <p>Wind Speed: <span id="windspeed"></span>m/s</p>                
-            <p>Wind Chill: <span id="windchill"></span>&deg;C</p>
+            <p>Conditions: <span id="windspeed"></span>m/s</p>                
+            <p>Humidity: <span id="windchill"></span>&deg;C</p>
         </div>
         </div>
-</div>
+        <div class="temple-highlight">
+          <p>The Idaho Falls Temple is located in SouthEast Idaho about 30 minutes south of Rexburg.</p>
+          <p>This Temple is known for being one of the few temples that used to do live endowment sessions.</p>
+          <p>Groundbreaking for this Temple was December 19, 1939 and was originally dedicated September 23rd of 1945.</p>
+        </div>
+
+        <picture class="temple1">
+          <source media="(max-width: 637px)" srcset="images/idahofallssmall.jpg">
+          <source media="(max-width: 1500px)" srcset="images/idahofallstemple2.jpg">
+          <img src="./images/idahofallstemple2.jpg" alt="picture of the idaho falls temple">
+        </picture>
+
 </main>
 <footer>
   <img class="footer-logo" src="./images/logo_small_icon_only.jpg" alt="small icon logo">
