@@ -1,35 +1,45 @@
 const requestURL = 'https://zannamai.github.io/Finale-Project-WDD230/json/temples.json'
-let temples = null;
+const cards = document.getElementById('cards');
 
 fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        temples = jsonObject['temples'];
+        console.table(jsonObject);
+        const temples = jsonObject['temples'];
         temples.forEach(displayTemples);
     });
         function displayTemples(temples) {
 
             let card = document.createElement('section');
-            let image = document.createElement('img');
-            let name = document.createElement('h2');
-            let address = document.createElement('span');
-            let telephone = document.createElement('span');
-            let website = document.createElement('a');
-            name.textContent = temples.name;
-            address.textContent = temples.address;
-            telephone.textContent = temples.telephone;
-            website.textContent = temples.website;
+            let h2 = document.createElement('h2')
+            let picture = document.createElement('img');
+            let info = document.createElement('p');
+            
+            h2.textContent = temples.name;
+            info.innerHTML = `Address: ${temples.address} <br>
+            Telephone: ${temples.telephone} <br>
+            History: ${temples.history} <br>
+            Schedule: ${temples.schedule} <br>
+            Closures: ${temples.closure} `
+
+            picture.setAttribute('src', temples.image);
+            picture.setAttribute('alt', `Image of ${temples.name}`);
+
+
+           // name.textContent = temples.name;
+          //  address.textContent = temples.address;
+           // telephone.textContent = temples.telephone;
+           // history.textContent = temples.history;
+           // schedule.textContent = temples.schedule;
+           // closure.textContent = temples.closure; 
           
-            image.setAttribute('alt', `Image of ${temples.name}`);
                    
-            card.appendChild(image);
-            card.appendChild(name);
-            card.appendChild(address);
-            card.appendChild(telephone);
-            card.appendChild(website);
-           
-            document.getElementById('cards').appendChild(card);
+            card.appendChild(h2);
+            card.appendChild(info);
+            card.appendChild(picture);
+
+            cards.appendChild(card);
         
         }
