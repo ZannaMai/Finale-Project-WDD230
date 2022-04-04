@@ -22,7 +22,7 @@
   <nav>
     <button id="hamburgerBtn"><span>&#9776;</span><span>&#10070;</span></button>
     <ul id="primaryNav">
-        <li class="active"><a href="./index.html">Home</a></li>
+        <li class="active"><a href="./index.html"><strong>Home</strong></a></li>
         <li><a href="./services.html">Services</a></li>
         <li><a href="./temples.html">Temples</a></li>
         <li><a href="./reservation.html">Reservations</a></li>
@@ -31,11 +31,16 @@
     <a class="logo1" href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link"></a>
     <a class="logo2" href="https://facebook.com" target="blank"><img src="images/facebook_logo.jpg" alt="Facebook Link"></a>
 </header>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  This is an alert box.
+</div>
 
 <main>
   <picture class="hero-image">
+    <source media="(max-width: 6377px)" srcset="images/image_small.jpg">
     <source media="(max-width: 1167px)" srcset="images/medium_image.jpg">
-    <source media="(max-width: 1500px)" srcset="images/idahofalls.jpg">
+    <source media="(max-width: 1500px)" srcset="images/idahofalls_large.jpg">
     <img src="images/idahofalls.jpg" alt="picture of the Idaho Falls Temple">
   </picture>
 
@@ -57,26 +62,17 @@
   </div>
 
     <div class="weather">
+      <button onclick="openwindow()" class="weather-button">Open Weather Information</button>
         <h2>
             Current Weather
         </h2>
-        <div class="temp-move">
-            <figure>
-                <img src="" alt="" class="weathericon" />
-            </figure>
-            <p><span id="icon-src"></span></p>
-            <figure>
-                <img src="" alt="" class="weathericon" />  
-                <p><span id="current-temp"></span>&deg;C</p>
-                <figcaption></figcaption>
-            </figure>
-            <p>Conditions: <span id="windspeed"></span>m/s</p>                
-            <p>Humidity: <span id="windchill"></span>&deg;C</p>
+        <p><span id="conditions"></span></p>  
+            <p>Current Temperature: <span id="current-temp"></span>&deg;F</p>              
+            <p>Humidity: <span id="humidity"></span>%</p>
         </div>
-        </div>
+         
         <div class="temple-highlight">
           <p>The Idaho Falls Temple is located in SouthEast Idaho about 30 minutes south of Rexburg.</p>
-          <p>This Temple is known for being one of the few temples that used to do live endowment sessions.</p>
           <p>Groundbreaking for this Temple was December 19, 1939 and was originally dedicated September 23rd of 1945.</p>
         </div>
 

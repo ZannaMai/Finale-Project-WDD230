@@ -8,11 +8,37 @@
             "history": "Rededicated: 4 June 2017",
             "schedule": "By Appointment Only",
             "closure": "Saturday, 2 April 2022 Tuesday, 28 June 2022 - Monday, 11 July 2022 Saturday, 1 October 2022 Wednesday, 23 November 2022 (Limited Operations) Thursday, 24 November 2022 Saturday, 24 December 2022 Saturday, 31 December 2022",
-            "website": "https://www.churchofjesuschrist.org/temples/details/idaho-falls-idaho-temple?lang=eng",
-            "image": "./images/idaho_falls.jpg"
+            "image": "./images/idaho_falls.jpg/"
         },
         {
-
+            "name": "Pocatello Idaho Temple",
+            "address": "3100 Butte St Pocatello ID 83201 United States",
+            "telephone": "208-646-7730",
+            "email": "",
+            "history": "Dedicated: 7 November 2021",
+            "schedule":"By Appointment Only",
+            "closure": "Monday, 2 May 2022 - Monday, 16 May 2022 Saturday, 1 October 2022 Monday, 31 October 2022 - Monday, 14 November 2022 Wednesday, 23 November 2022 (Limited Operations) Wednesday, 23 November 2022 Thursday, 24 November 2022 Saturday, 24 December 2022 Saturday, 31 December 2022 (Limited Operations) Saturday, 31 December 2022",
+            "image": "./images/pocatello.jpg/"
+        },
+        {
+            "name": "Rexburg Idaho Temple",
+            "address": "750 S 2nd E Rexburg ID 83440-5404 United States",
+            "telephone": "208-656-0880",
+            "email": "",
+            "history": "Dedicated: 10 February 2008",
+            "schedule":"By Appointment Only",
+            "closure": "Monday, 11 April 2022 - Monday, 4 July 2022 Saturday, 23 July 2022 Saturday, 1 October 2022 Wednesday, 23 November 2022 - Thursday, 24 November 2022 Saturday, 24 December 2022 Saturday, 31 December 2022",
+            "image": "./images/rexburg.jpg/"
+        },
+        {
+            "name": "Twin Falls Idaho Temple",
+            "address": "1405 Eastland Dr N Twin Falls ID 83301 United States",
+            "telephone": "208-736-7070",
+            "email": "",
+            "history": "Dedicated: 24 August 2008",
+            "schedule":"By Appointment Only",
+            "closure": "Monday, 12 September 2022 - Monday, 26 September 2022 Saturday, 1 October 2022 Wednesday, 23 November 2022 (Limited Operations) Thursday, 24 November 2022 Saturday, 24 December 2022 Saturday, 31 December 2022",
+            "image": "./images/twinfalls.jpg/"
         }
     ]
 }

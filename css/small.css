@@ -10,6 +10,32 @@ html {
     font-family: "Oswald", sans-serif;
 }
 
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+  
+
 h1,
 h2,
 h3,
@@ -98,25 +124,28 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     gap: 10px;
-
 }
 
 .hero-image {
     margin-top: 20px;
-    grid-column-end: 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .welcome {
     grid-column: 2;
+    grid-row: 1;
 }
 
 .call .button1 {
-    grid-column-end: 1;
+    grid-column: 1;
     grid-row: 2;
     padding: 60px;
     font-size: larger;
+    max-height: 180px;
 }
 
 .button1:hover {
@@ -124,14 +153,17 @@ main {
 }
 
 .contact-info {
+    grid-column: 2;
     grid-row: 2;
     font-size: smaller;
     border: 1px solid;
     padding: 10px;
     background-color: #BFD3C1;
+    max-height: 95%;
 }
 
 .weather {
+    grid-column: 1;
     grid-row: 3;
     border: 1px solid;
     background-color: #BFD3C1;
@@ -139,7 +171,16 @@ main {
 }
 
 .temple-highlight {
+    grid-column: 2;
+    grid-row: 3;
     border: 1px solid;
     padding: 10px;
     background-color: #BFD3C1;
+    height: 190px;
+}
+
+.temple1 {
+    padding: 30px;
+    grid-column: 1 / 2;
+    grid-row: 4;
 }
