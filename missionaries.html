@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Time Missionaries Page for those interested in learning more</title>
-</head>
-<body>
-    <h2>Full Time Missionaries</h2>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Temple Inn & Suites</title>
+    <meta name="description" content="Temple Inn & Suites Landing Page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=Lora&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+        <img class="primary-logo" src="./images/logo_white_large.png" alt="temple inn & suites logo">
+  <nav>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>&#10070;</span></button>
+    <ul id="primaryNav">
+        <li class="active"><a href="./index.html"><strong>Home</strong></a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./temples.html">Temples</a></li>
+        <li><a href="./reservation.html">Reservations</a></li>
+    </ul>
+</nav>
+    <a class="logo1" href="https://instagram.com" target="blank"><img src="images/instagram.png" alt="Instagram Link"></a>
+    <a class="logo2" href="https://facebook.com" target="blank"><img src="images/facebook_logo.jpg" alt="Facebook Link"></a>
+</header>
+
+<main class="missionaries"> 
+    <h2>Full-Time Temple Missionaries</h2>
+
+    <div class="rooms">
+        <h3>Single Bed</h3>
+        <img src="./images/single.jpg" alt="single bed hotel room"><br>
+        <a href='https://www.freepik.com/psd/3d-rendering'>3d rendering psd created by alexandercho - www.freepik.com</a>
+        <h3>Queen Bed </h3>
+        <img src="./images/queen.jpg" alt="queen bed hotel room"><br>
+        <a href='https://www.freepik.com/psd/bed-mockup'>Bed mockup psd created by alexandercho - www.freepik.com</a>
+        <h3>2 Queen Beds</h3>
+
+        <h3>2 Queen Beds and a Fold Out Couch</h3>
+    </div>
+
+    <div class="wrapper">
+        <h2>CONTACT US</h2>
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="Name" id="name" placeholder="First and Last" required minlength="3" maxlength="25" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="Email" id="email" placeholder="email@domain.tld" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="Message" id="message" rows="5" placeholder="Type your message here...."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="submit"><i class="far fa-paper-plane"></i>Send</button>
+          </div>
+        </form>
+      </div>
+</main>
+<footer>
+  <img class="footer-logo" src="./images/logo_small_icon_only.jpg" alt="small icon logo">
+      <h3>Contact</h3>
+      <p>Address: 4800 Montgomery Ln #300, Bethesda, MD 20814</p>              
+      <p>Phone: <a href="telephone"> (123) 456-7891</a>
+          <br>Email: <a href="mailingaddress"> templeinn@contact.com</a>
+          <a href="https://www.google.com/maps/place/Temple+Inn+%26+Suites/@38.9832559,-77.0977205,17z/data=!3m2!4b1!5s0x89b7c97b748ccba9:0x1eb6c2cfd03a52c0!4m5!3m4!1s0x89b7c98c0bda2181:0xe8ffe07c69d0aabe!8m2!3d38.9832518!4d-77.0955318" target="blank">🗺️ Location Map</a>
+      </p>
+  <div class="date-footer">
+    &copy;<span id="year"></span> | Zanna Johnson | BYU Idaho Online <br />
+    <span id="updated"></span>
+    <a>Weather information provided by OpenWeatherApp</a>
+</div>
+</footer>
+    <script defer src="js/date.js"></script>
+    <script defer src="js/toggle-menu.js"></script>
+    <script defer src="js/banner.js"></script>
+    <script defer src="js/weatherapi.js"></script>
+  </body>
 </html>
