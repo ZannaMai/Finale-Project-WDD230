@@ -1,6 +1,35 @@
 @media only screen and (min-width: 64rem) {
+
     .rooms {
         display: flex;
     }
-    
+
+    .rooms a {
+        font-size: xx-small;
+    }
+
+    .rooms p {
+        padding: 5px;
+    }
+
+    .beds {
+        padding: 15px;
+        background-color: #bfd3c1;
+    }
+
+    .rooms1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .rooms1 img {
+        grid-column: 1;
+    }
+
+    .rooms1 p {
+        grid-column: 2;
+        padding: 40px;
+        background-color: #bfd3c1;
+    }
+
 }
