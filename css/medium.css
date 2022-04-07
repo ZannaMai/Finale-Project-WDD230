@@ -7,5 +7,26 @@
         padding: 10px;
     }
 
-    
+    .temple1 {
+        max-height: 75%;
+        margin-bottom: 300px;
+    }
+
+    .hero-image {
+        margin-top: none;
+        height: 100%;
+    }
+
+    .weather {
+        max-height: 175px;
+    }
+
+    .call {
+        height: 175px;
+    }
+
+    .contact-info {
+        max-height: 175px;
+    }
+
 }

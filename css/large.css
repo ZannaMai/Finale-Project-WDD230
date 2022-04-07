@@ -47,7 +47,24 @@
     }
 
     .hero-image {
-        width: 100%;
+        max-width: 85%;
+    }
+
+    .home-page {
+        display: block;
+    }
+
+    .call {
+        float: right;
+        margin-top: -500px;
+    }
+
+    .large {
+        max-width: 40%;
+    }
+
+    .temple1 {
+        float: right;
     }
 
     main #cards {
