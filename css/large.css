@@ -50,4 +50,11 @@
         width: 100%;
     }
 
+    main #cards {
+        display: grid;
+        max-width: 200px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        padding: 100px;
+    }
 }
